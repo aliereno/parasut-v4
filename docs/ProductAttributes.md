@@ -27,6 +27,6 @@ Name | Type | Description | Notes
 **buyingCurrency** | **String** | Alış döviz | [optional] 
 **inventoryTracking** | **Boolean** |  | [optional] 
 **initialStockCount** | **Number** | Başlangıç Stok Miktarı | [optional] 
-**gtip** | [**BigDecimal**](BigDecimal.md) | Ürünün GTIP kodu - *https://uygulama.gtb.gov.tr/Tara adresinden öğrenebilirsiniz* | [optional] 
+**gtip** | **Number** | Ürünün GTIP kodu - *https://uygulama.gtb.gov.tr/Tara adresinden öğrenebilirsiniz* | [optional] 
 
 

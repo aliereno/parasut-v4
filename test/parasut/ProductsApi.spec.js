@@ -61,7 +61,7 @@
           productForm.data.attributes.buyingCurrency = "";
           productForm.data.attributes.inventoryTracking = false;
           productForm.data.attributes.initialStockCount = ;
-          productForm.data.attributes.gtip = ""new parasut.BigDecimal();
+          productForm.data.attributes.gtip = ;
           productForm.data.relationships = new parasut.CompanyIdemployeesDataRelationships();
           productForm.data.relationships.category = new parasut.CompanyIdbankFeesDataRelationshipsCategory();
           productForm.data.relationships.category.data = new parasut.CompanyIdbankFeesDataRelationshipsCategoryData();
@@ -131,7 +131,7 @@
                 expect(data.data.attributes.inventoryTracking).to.be(false);
                 expect(data.data.attributes.initialStockCount).to.be.a('number');
                 expect(data.data.attributes.initialStockCount).to.be();
-                expect(data.data.attributes.gtip).to.be.a(parasut.BigDecimal);
+                expect(data.data.attributes.gtip).to.be.a();
         
               expect(data.data.relationships).to.be.a(parasut.CompanyIdemployeesDataRelationships);
                     expect(data.data.relationships.category).to.be.a(parasut.CompanyIdbankFeesDataRelationshipsCategory);
@@ -269,7 +269,7 @@
                   expect(data.attributes.inventoryTracking).to.be(false);
                   expect(data.attributes.initialStockCount).to.be.a('number');
                   expect(data.attributes.initialStockCount).to.be();
-                  expect(data.attributes.gtip).to.be.a(parasut.BigDecimal);
+                  expect(data.attributes.gtip).to.be.a();
           
                 expect(data.relationships).to.be.a(parasut.CompanyIdemployeesDataRelationships);
                       expect(data.relationships.category).to.be.a(parasut.CompanyIdbankFeesDataRelationshipsCategory);
@@ -384,7 +384,7 @@
                 expect(data.data.attributes.inventoryTracking).to.be(false);
                 expect(data.data.attributes.initialStockCount).to.be.a('number');
                 expect(data.data.attributes.initialStockCount).to.be();
-                expect(data.data.attributes.gtip).to.be.a(parasut.BigDecimal);
+                expect(data.data.attributes.gtip).to.be.a();
         
               expect(data.data.relationships).to.be.a(parasut.CompanyIdemployeesDataRelationships);
                     expect(data.data.relationships.category).to.be.a(parasut.CompanyIdbankFeesDataRelationshipsCategory);
@@ -446,7 +446,7 @@
           productForm.data.attributes.buyingCurrency = "";
           productForm.data.attributes.inventoryTracking = false;
           productForm.data.attributes.initialStockCount = ;
-          productForm.data.attributes.gtip = ""new parasut.BigDecimal();
+          productForm.data.attributes.gtip = ;
           productForm.data.relationships = new parasut.CompanyIdemployeesDataRelationships();
           productForm.data.relationships.category = new parasut.CompanyIdbankFeesDataRelationshipsCategory();
           productForm.data.relationships.category.data = new parasut.CompanyIdbankFeesDataRelationshipsCategoryData();
@@ -516,7 +516,7 @@
                 expect(data.data.attributes.inventoryTracking).to.be(false);
                 expect(data.data.attributes.initialStockCount).to.be.a('number');
                 expect(data.data.attributes.initialStockCount).to.be();
-                expect(data.data.attributes.gtip).to.be.a(parasut.BigDecimal);
+                expect(data.data.attributes.gtip).to.be.a();
         
               expect(data.data.relationships).to.be.a(parasut.CompanyIdemployeesDataRelationships);
                     expect(data.data.relationships.category).to.be.a(parasut.CompanyIdbankFeesDataRelationshipsCategory);

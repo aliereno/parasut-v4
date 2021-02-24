@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BigDecimal'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./BigDecimal'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.parasut) {
       root.parasut = {};
     }
-    root.parasut.ProductAttributes = factory(root.parasut.ApiClient, root.parasut.BigDecimal);
+    root.parasut.ProductAttributes = factory(root.parasut.ApiClient);
   }
-}(this, function(ApiClient, BigDecimal) {
+}(this, function(ApiClient) {
   'use strict';
 
   /**
@@ -105,7 +105,7 @@
       if (data.hasOwnProperty('initial_stock_count'))
         obj.initialStockCount = ApiClient.convertToType(data['initial_stock_count'], 'Number');
       if (data.hasOwnProperty('gtip'))
-        obj.gtip = ApiClient.convertToType(data['gtip'], BigDecimal);
+        obj.gtip = ApiClient.convertToType(data['gtip'], 'Number');
     }
     return obj;
   }
@@ -247,7 +247,7 @@
 
   /**
    * Ürünün GTIP kodu - *https://uygulama.gtb.gov.tr/Tara adresinden öğrenebilirsiniz*
-   * @member {module:model/BigDecimal} gtip
+   * @member {Number} gtip
    */
   exports.prototype.gtip = undefined;
 
